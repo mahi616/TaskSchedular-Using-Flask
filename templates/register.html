@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <title>Register - TaskSchedular</title>
+</head>
+<body>
+
+
+    <form method="POST" class="registration">
+        <h2>Create an Account</h2>
+        <label for="username">Username:</label>
+        <input type="text" name="username" required>
+
+        {% if err_user %}
+        <p class="error">{{ err_user }}</p>
+        {% endif %}
+
+        <label for="password">Password:</label>
+        <input type="text" name="password" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required>
+
+        {% if err_email %}
+        <p class="error">{{ err_email }}</p>
+        {% endif %}
+
+
+        <input type="submit" value="Register">
+        <p>Already have an account? <a href="{{ url_for('login') }}">Please Login</a></p>
+    </form>
+
+</body>
+</html>

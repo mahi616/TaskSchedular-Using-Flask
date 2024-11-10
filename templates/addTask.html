@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='task.css')}}">
+    <title>Add-task</title>
+</head>
+
+<body>
+
+
+    <form method="POST">
+
+        <label for="name" id="name">Name: </label>
+        <input type="text" name="name" required>
+
+        <label for="description">Description: </label>
+        <input type="text" name="description" id="description" required>
+
+        <label for="scheduleTime">Scehdule Time: </label>
+        <input type="time" name="scheduleTime" id="scheduleTime" required>
+
+        <button required>Add Task</button>
+    </form>
+</body>
+
+</html>

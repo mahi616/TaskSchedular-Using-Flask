@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(240, 240, 240);
+}
+form{
+    margin-top: 20vh;
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px grey;
+}
+
+
+h2{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 17px;
+    color: rgb(67, 67, 67);
+    margin-left: 30px;
+}
+input{
+    border: 1px solid grey;
+    background-color: rgb(249, 249, 249);
+    border-radius: 5px;
+    margin-bottom: 5%;
+    display: block;
+    height: 10%;
+    width: 80%;
+    font-size: 18px;
+    padding-left: 10px;
+    color: grey;
+    font-weight: 300;
+    margin-left: 8%;
+}
+input[type='submit']{
+    background-color: rgb(0, 89, 255);
+    color: white;
+    width: 83%;
+    height: 12%;
+}
+input[type='submit']:hover{
+    cursor: pointer;
+    background-color: blue;
+}
+p{
+    margin-left: 33px;
+    font-size: 110%;
+}
+a{
+    margin-left: 5px;
+    color: rgb(0, 89, 255);
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.error{
+
+    width: 82%;
+    font-size: 12px;
+    text-align: center;
+    margin-top: -10px;
+    color: rgb(220, 3, 3);
+    margin-bottom: 20px;
+}
+
+.registration{
+    margin-top: 10vh;
+    height: 500px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px grey;
+}
+.registration input{
+    height: 8%;
+}
+
+
+
+@media (max-width: 450px){
+    form{
+        width: 300px;
+    }
+    .registration{
+        width: 300px;
+    }
+    input{
+        height: 8%;
+        font-size: 10px;
+    }
+
+    input[type='submit']{
+        height: 8%;
+        font-size: 10px;
+    }
+
+    p{
+        font-size: 85%;
+    }
+
+}
